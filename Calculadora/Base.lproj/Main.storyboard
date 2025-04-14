@@ -16,22 +16,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Resultado" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7gZ-l1-Zps">
-                                <rect key="frame" x="0.0" y="128" width="393" height="216"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
-                                <color key="textColor" systemColor="systemBackgroundColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w9L-Zy-AOp">
                                 <rect key="frame" x="297" y="352" width="80" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="/">
+                                <buttonConfiguration key="configuration" style="filled" title="÷">
                                     <backgroundConfiguration key="background">
                                         <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                     </backgroundConfiguration>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="division:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8ya-0x-X7N"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yxH-3w-Kc1">
                                 <rect key="frame" x="297" y="440" width="80" height="80"/>
@@ -42,6 +38,9 @@
                                         <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                     </backgroundConfiguration>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="multiplicacion:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ut1-iT-d9e"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kr4-bl-zMr">
                                 <rect key="frame" x="297" y="528" width="80" height="80"/>
@@ -63,6 +62,9 @@
                                         <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                     </backgroundConfiguration>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="sumar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ioH-aT-Lj5"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jDm-6v-FZX">
                                 <rect key="frame" x="297" y="704" width="80" height="80"/>
@@ -73,6 +75,9 @@
                                         <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                     </backgroundConfiguration>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="igual:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Nbw-iK-QmF"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="26a-yO-vDb">
                                 <rect key="frame" x="209" y="352" width="80" height="80"/>
@@ -83,6 +88,9 @@
                                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </backgroundConfiguration>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="porcentaje:" destination="BYZ-38-t0r" eventType="touchUpInside" id="b4Q-pD-MTl"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nf1-78-qPL">
                                 <rect key="frame" x="121" y="352" width="80" height="80"/>
@@ -93,6 +101,9 @@
                                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </backgroundConfiguration>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="cambiarSigno:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HMR-YA-MSs"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f8a-HV-5iX">
                                 <rect key="frame" x="33" y="352" width="80" height="80"/>
@@ -103,6 +114,9 @@
                                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </backgroundConfiguration>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="borrar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HKo-df-TbL"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yle-7i-Le1">
                                 <rect key="frame" x="33" y="440" width="80" height="80"/>
@@ -113,6 +127,9 @@
                                         <color key="backgroundColor" systemColor="systemGrayColor"/>
                                     </backgroundConfiguration>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="addSiete:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zjp-ZZ-P9h"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hSV-ig-psw">
                                 <rect key="frame" x="121" y="440" width="80" height="80"/>
@@ -123,6 +140,9 @@
                                         <color key="backgroundColor" systemColor="systemGrayColor"/>
                                     </backgroundConfiguration>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="addOcho:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hm1-lR-btY"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WZO-jy-cHF">
                                 <rect key="frame" x="209" y="440" width="80" height="80"/>
@@ -133,6 +153,9 @@
                                         <color key="backgroundColor" systemColor="systemGrayColor"/>
                                     </backgroundConfiguration>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="addNueve:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uKS-mo-i9G"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6rQ-9E-GI5">
                                 <rect key="frame" x="33" y="528" width="80" height="80"/>
@@ -143,6 +166,9 @@
                                         <color key="backgroundColor" systemColor="systemGrayColor"/>
                                     </backgroundConfiguration>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="addCuatro:" destination="BYZ-38-t0r" eventType="touchUpInside" id="t6J-6U-AaQ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1N4-h5-Cq6">
                                 <rect key="frame" x="121" y="527" width="80" height="80"/>
@@ -153,6 +179,9 @@
                                         <color key="backgroundColor" systemColor="systemGrayColor"/>
                                     </backgroundConfiguration>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="addCinco:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6jD-vU-wmb"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kAc-zu-VBj">
                                 <rect key="frame" x="209" y="527" width="80" height="80"/>
@@ -163,6 +192,9 @@
                                         <color key="backgroundColor" systemColor="systemGrayColor"/>
                                     </backgroundConfiguration>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="addSeis:" destination="BYZ-38-t0r" eventType="touchUpInside" id="g29-gk-XUa"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kOB-wi-wl1">
                                 <rect key="frame" x="33" y="615" width="80" height="80"/>
@@ -173,9 +205,12 @@
                                         <color key="backgroundColor" systemColor="systemGrayColor"/>
                                     </backgroundConfiguration>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="addUno:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qJu-ky-KKO"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MxD-n7-h8i">
-                                <rect key="frame" x="121" y="614" width="80" height="80"/>
+                                <rect key="frame" x="121" y="616" width="80" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="2">
@@ -183,6 +218,9 @@
                                         <color key="backgroundColor" systemColor="systemGrayColor"/>
                                     </backgroundConfiguration>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="addDos:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2EI-86-o32"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VbE-13-Fi7">
                                 <rect key="frame" x="209" y="615" width="80" height="80"/>
@@ -193,6 +231,9 @@
                                         <color key="backgroundColor" systemColor="systemGrayColor"/>
                                     </backgroundConfiguration>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="addTres:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0gH-nj-0sG"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rXT-gP-hPO">
                                 <rect key="frame" x="209" y="703" width="80" height="80"/>
@@ -203,6 +244,9 @@
                                         <color key="backgroundColor" systemColor="systemGrayColor"/>
                                     </backgroundConfiguration>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="addComa:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ob0-Uw-9DT"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gdf-Jd-Fe2">
                                 <rect key="frame" x="33" y="702" width="168" height="80"/>
@@ -213,11 +257,79 @@
                                         <color key="backgroundColor" systemColor="systemGrayColor"/>
                                     </backgroundConfiguration>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="addCero:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wM1-sD-BOF"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Resultado" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7gZ-l1-Zps">
+                                <rect key="frame" x="0.0" y="110" width="393" height="216"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                <color key="textColor" systemColor="systemBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mOn-j0-xtZ">
+                                <rect key="frame" x="297" y="526" width="80" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="-">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                    </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" name=".SFNS-Regular" family=".AppleSystemUIFont" pointSize="18"/>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h8g-Sa-SJU">
+                                <rect key="frame" x="297" y="528" width="80" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="-">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                    </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" name=".SFNS-Regular" family=".AppleSystemUIFont" pointSize="18"/>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ns0-Rg-tx5">
+                                <rect key="frame" x="297" y="525" width="80" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="-">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                    </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" name=".SFNS-Regular" family=".AppleSystemUIFont" pointSize="18"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="restar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7b2-Xr-w8D"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.22372342139175261" green="0.22372342139175261" blue="0.22372342139175261" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
+                    <connections>
+                        <outlet property="borrar" destination="f8a-HV-5iX" id="IzO-t3-HxO"/>
+                        <outlet property="cambiarSigno" destination="Nf1-78-qPL" id="IDF-v5-kVX"/>
+                        <outlet property="cero" destination="gdf-Jd-Fe2" id="iLE-2j-w0a"/>
+                        <outlet property="cinco" destination="1N4-h5-Cq6" id="caN-9G-JEI"/>
+                        <outlet property="cuatro" destination="6rQ-9E-GI5" id="k0l-2b-EWS"/>
+                        <outlet property="decimal" destination="rXT-gP-hPO" id="0u8-s2-gLR"/>
+                        <outlet property="division" destination="w9L-Zy-AOp" id="C2F-yP-iWH"/>
+                        <outlet property="dos" destination="MxD-n7-h8i" id="Xdk-Si-ev3"/>
+                        <outlet property="igual" destination="jDm-6v-FZX" id="IbI-vH-9sm"/>
+                        <outlet property="multiplicacion" destination="yxH-3w-Kc1" id="Ps3-kG-fCR"/>
+                        <outlet property="nueve" destination="WZO-jy-cHF" id="NT5-yE-7ib"/>
+                        <outlet property="ocho" destination="hSV-ig-psw" id="04A-5I-7R6"/>
+                        <outlet property="porcentaje" destination="26a-yO-vDb" id="WK3-Qx-OFU"/>
+                        <outlet property="resta" destination="ns0-Rg-tx5" id="spu-nm-95P"/>
+                        <outlet property="resultado" destination="7gZ-l1-Zps" id="O6P-Xy-gtK"/>
+                        <outlet property="seis" destination="kAc-zu-VBj" id="LaL-rV-dH6"/>
+                        <outlet property="siete" destination="yle-7i-Le1" id="4Fm-Qj-rQM"/>
+                        <outlet property="suma" destination="0qH-RB-vZG" id="TaX-f1-msn"/>
+                        <outlet property="tres" destination="VbE-13-Fi7" id="nz0-FS-dRM"/>
+                        <outlet property="uno" destination="kOB-wi-wl1" id="y1P-9Q-3Va"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
