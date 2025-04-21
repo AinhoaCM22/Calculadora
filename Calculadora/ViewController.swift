@@ -27,18 +27,32 @@ class ViewController: UIViewController {
         resultado.text = "0"
         cambiarNum = true
     }
+    
+    func setFormat (_ result : Double) -> String {
+        if(result.truncatingRemainder(dividingBy: 1) == 0 ) {
+            return String(format: "%.0f", result)
+        }
+        else {
+            return String(format: "%.5f", result)
+        }
+    }
+    
     func comprobarSigno(_ signo : Bool , _ cambiarNum : Bool) {
-        if (!signo) {
+        if (signo == false) {
             if (!cambiarNum) {
                 num1 = "-" + num1
+                resultado.text = num1
             } else {
                 num2 = "-" + num2
+                resultado.text = num2
             }
         } else {
             if (!cambiarNum) {
                 num1 = num1.replacingOccurrences(of: "-", with: "")
+                resultado.text = num1
             } else {
                 num2 = num2.replacingOccurrences(of: "-", with: "")
+                resultado.text = num2
             }
         }
     }
@@ -47,6 +61,7 @@ class ViewController: UIViewController {
             if(!cambiarNum) {
                 if (num1 == "0"){
                     num1 = num
+                    resultado.text = num1
                 } else {
                     num1 = num1 + num
                     resultado.text = num1
@@ -54,6 +69,7 @@ class ViewController: UIViewController {
             } else {
                 if (num2 == "0"){
                     num2 = num
+                    resultado.text = num2
                 } else {
                     num2 = num2 + num
                     resultado.text = num2
@@ -78,44 +94,46 @@ class ViewController: UIViewController {
             setOperacion("+")
         }
         
+    
         @IBAction func igual(_ sender: Any) {
-            var result = ""
+            var result : Double
             var primerNumero = Double(num1.replacingOccurrences(of: ",", with: ".")) ?? 0.0
             var segundoNumero = Double(num2.replacingOccurrences(of: ",", with: ".")) ?? 0.0
+          
             
             switch (operacion) {
             case "/" :
-                result = " \(primerNumero / segundoNumero) "
-                resultado.text = result
-                num1 = result
+                result = (primerNumero / segundoNumero)
+                resultado.text = setFormat(result)
+                num1 = setFormat(result)
                 num2 = ""
                 operacion = ""
                 break
             case "*" :
-                result = " \(primerNumero * segundoNumero)"
-                resultado.text = result
-                num1 = result
+                result = primerNumero * segundoNumero
+                resultado.text = setFormat(result)
+                num1 = setFormat(result)
                 num2 = ""
                 operacion = ""
                 break
             case "+" :
-                result = "\(primerNumero + segundoNumero)"
-                resultado.text = result
-                num1 = result
+                result = (primerNumero + segundoNumero)
+                resultado.text = setFormat(result)
+                num1 = setFormat(result)
                 num2 = ""
                 operacion = ""
                 break
             case "-" :
-                result = "\(primerNumero - segundoNumero)"
-                resultado.text = result
-                num1 = result
+                result = primerNumero - segundoNumero
+                resultado.text = setFormat(result)
+                num1 = setFormat(result)
                 num2 = ""
                 operacion = ""
                 break
             case "%" :
-                result = "\(primerNumero * 0.01)"
-                resultado.text = result
-                num1 = result
+                result = primerNumero * 0.01
+                resultado.text = setFormat(result)
+                num1 = setFormat(result)
                 num2 = ""
                 operacion = ""
                 break
@@ -140,7 +158,7 @@ class ViewController: UIViewController {
         
       
         
-        @IBAction func borrar(_ sender: Any) {
+    @IBAction func borrar(_ sender: Any) {
           num1 = ""
           num2 = ""
           operacion = ""
