@@ -54,7 +54,7 @@
                                 </buttonConfiguration>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0qH-RB-vZG">
-                                <rect key="frame" x="297" y="616" width="80" height="80"/>
+                                <rect key="frame" x="297" y="617" width="80" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="+">
@@ -115,7 +115,7 @@
                                     </backgroundConfiguration>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="borrar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HKo-df-TbL"/>
+                                    <action selector="borrar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rhi-Ja-Kjb"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yle-7i-Le1">
@@ -309,26 +309,7 @@
                         <color key="backgroundColor" red="0.22372342139175261" green="0.22372342139175261" blue="0.22372342139175261" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <connections>
-                        <outlet property="borrar" destination="f8a-HV-5iX" id="IzO-t3-HxO"/>
-                        <outlet property="cambiarSigno" destination="Nf1-78-qPL" id="IDF-v5-kVX"/>
-                        <outlet property="cero" destination="gdf-Jd-Fe2" id="iLE-2j-w0a"/>
-                        <outlet property="cinco" destination="1N4-h5-Cq6" id="caN-9G-JEI"/>
-                        <outlet property="cuatro" destination="6rQ-9E-GI5" id="k0l-2b-EWS"/>
-                        <outlet property="decimal" destination="rXT-gP-hPO" id="0u8-s2-gLR"/>
-                        <outlet property="division" destination="w9L-Zy-AOp" id="C2F-yP-iWH"/>
-                        <outlet property="dos" destination="MxD-n7-h8i" id="Xdk-Si-ev3"/>
-                        <outlet property="igual" destination="jDm-6v-FZX" id="IbI-vH-9sm"/>
-                        <outlet property="multiplicacion" destination="yxH-3w-Kc1" id="Ps3-kG-fCR"/>
-                        <outlet property="nueve" destination="WZO-jy-cHF" id="NT5-yE-7ib"/>
-                        <outlet property="ocho" destination="hSV-ig-psw" id="04A-5I-7R6"/>
-                        <outlet property="porcentaje" destination="26a-yO-vDb" id="WK3-Qx-OFU"/>
-                        <outlet property="resta" destination="ns0-Rg-tx5" id="spu-nm-95P"/>
                         <outlet property="resultado" destination="7gZ-l1-Zps" id="O6P-Xy-gtK"/>
-                        <outlet property="seis" destination="kAc-zu-VBj" id="LaL-rV-dH6"/>
-                        <outlet property="siete" destination="yle-7i-Le1" id="4Fm-Qj-rQM"/>
-                        <outlet property="suma" destination="0qH-RB-vZG" id="TaX-f1-msn"/>
-                        <outlet property="tres" destination="VbE-13-Fi7" id="nz0-FS-dRM"/>
-                        <outlet property="uno" destination="kOB-wi-wl1" id="y1P-9Q-3Va"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

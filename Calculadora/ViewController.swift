@@ -45,11 +45,19 @@ class ViewController: UIViewController {
         
         func setnum (_ cambiarNum : Bool , _ num : String) {
             if(!cambiarNum) {
-                num1 = num1 + num
-                resultado.text = num1
+                if (num1 == "0"){
+                    num1 = num
+                } else {
+                    num1 = num1 + num
+                    resultado.text = num1
+                }
             } else {
-                num2 = num2 + num
-                resultado.text = num2
+                if (num2 == "0"){
+                    num2 = num
+                } else {
+                    num2 = num2 + num
+                    resultado.text = num2
+                }
             }
             
         }
@@ -132,14 +140,13 @@ class ViewController: UIViewController {
         
       
         
-       @IBAction func borrar(_ sender: Any) {
-           
+        @IBAction func borrar(_ sender: Any) {
           num1 = ""
           num2 = ""
           operacion = ""
           resultado.text = "0"
           cambiarNum = false
-       }
+        }
     
         @IBAction func addNueve(_ sender: Any) {
             setnum(cambiarNum, "9")
