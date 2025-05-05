@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-class Model {
+class Model : ProtocolModel {
     
     var num1 = "0"
     var num2 = "0"
@@ -128,9 +128,9 @@ class Model {
         default :
             break
         }
-            changeNum = false
-            return setFormat(resultOperation)
-        }
+        changeNum = false
+        return setFormat(resultOperation)
     }
+}
 
 
