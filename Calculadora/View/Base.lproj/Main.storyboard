@@ -26,7 +26,7 @@
                                     </backgroundConfiguration>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="division:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8ya-0x-X7N"/>
+                                    <action selector="divide:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8ya-0x-X7N"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yxH-3w-Kc1">
@@ -39,7 +39,7 @@
                                     </backgroundConfiguration>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="multiplicacion:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ut1-iT-d9e"/>
+                                    <action selector="multiply:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ut1-iT-d9e"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kr4-bl-zMr">
@@ -63,7 +63,7 @@
                                     </backgroundConfiguration>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="sumar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ioH-aT-Lj5"/>
+                                    <action selector="add:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ioH-aT-Lj5"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jDm-6v-FZX">
@@ -76,7 +76,7 @@
                                     </backgroundConfiguration>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="igual:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Nbw-iK-QmF"/>
+                                    <action selector="equal:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Nbw-iK-QmF"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="26a-yO-vDb">
@@ -89,7 +89,7 @@
                                     </backgroundConfiguration>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="porcentaje:" destination="BYZ-38-t0r" eventType="touchUpInside" id="b4Q-pD-MTl"/>
+                                    <action selector="percentage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="b4Q-pD-MTl"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nf1-78-qPL">
@@ -301,7 +301,7 @@
                                     <fontDescription key="titleFontDescription" name=".SFNS-Regular" family=".AppleSystemUIFont" pointSize="18"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="restar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7b2-Xr-w8D"/>
+                                    <action selector="subtract:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7b2-Xr-w8D"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -309,7 +309,7 @@
                         <color key="backgroundColor" red="0.22372342139175261" green="0.22372342139175261" blue="0.22372342139175261" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <connections>
-                        <outlet property="resultado" destination="7gZ-l1-Zps" id="O6P-Xy-gtK"/>
+                        <outlet property="result" destination="7gZ-l1-Zps" id="O6P-Xy-gtK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
